@@ -48,3 +48,15 @@ kubectl scale deployment.apps/NOMBRE_DEL_DEPLOYMENT -n NAMESPACE --replicas NUME
 ```
 kubectl get svc -n NAMESPACE
 ```
+
+### Visualizar Pagina Web
+En una pestana del navegador de Internet
+```
+http://DIRECCION_DE_IP_DEL_SERVICIO
+```
+
+### Destruir Cluster
+```
+gcloud container clusters delete NOMBRE_DEL_CLUSTER --zone ZONA_DEL_CLUSTER
+```
+
