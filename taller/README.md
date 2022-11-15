@@ -17,3 +17,8 @@ gcloud container clusters list
 ```
 gcloud container clusters get-credentials NOMBRE_DEL_CLUSTER --zone ZONA_DEL_CLUSTER
 ```
+
+### Listar Nodos del cluster
+```
+kubectl get nodes
+```
