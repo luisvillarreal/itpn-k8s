@@ -33,3 +33,13 @@ kubectl create ns w255
 ```
 kubectl apply -f NOMBRE_DE_ARCHIVO.yaml
 ```
+
+### Borrar pod
+```
+kubectl delete pod -n NAMESPACE NOMBRE_DEL_POD
+```
+
+### Escalar Deployment
+```
+kubectl scale deployment.apps/NOMBRE_DEL_DEPLOYMENT -n NAMESPACE --replicas NUMERO
+```
