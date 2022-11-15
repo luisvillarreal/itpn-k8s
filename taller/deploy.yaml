@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment-blue
+  labels:
+    app: nginx
+    branch: blue
+  namespace: w255
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+      branch: blue
+  template:
+    metadata:
+      labels:
+        app: nginx
+        branch: blue
+    spec:
+      containers:
+      - name: nginx
+        image: gcr.io/w255-instructor/nginx:blue
+        ports:
+        - containerPort: 80
