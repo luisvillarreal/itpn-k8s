@@ -22,3 +22,14 @@ gcloud container clusters get-credentials NOMBRE_DEL_CLUSTER --zone ZONA_DEL_CLU
 ```
 kubectl get nodes
 ```
+
+
+### Crear Namespace
+```
+kubectl create ns w255
+```
+
+### Aplicar configuracion de archivo
+```
+kubectl apply -f NOMBRE_DE_ARCHIVO.yaml
+```
