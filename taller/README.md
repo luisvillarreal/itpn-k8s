@@ -43,3 +43,8 @@ kubectl delete pod -n NAMESPACE NOMBRE_DEL_POD
 ```
 kubectl scale deployment.apps/NOMBRE_DEL_DEPLOYMENT -n NAMESPACE --replicas NUMERO
 ```
+
+### Obtener direccion IP del Servicio
+```
+kubectl get svc -n NAMESPACE
+```
