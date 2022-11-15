@@ -12,3 +12,8 @@ git clone https://github.com/luisvillarreal/itpn-k8s.git
 ```
 gcloud container clusters list
 ```
+
+### Obtener credenciales del cluster
+```
+gcloud container clusters get-credentials NOMBRE_DEL_CLUSTER --zone ZONA_DEL_CLUSTER
+```
