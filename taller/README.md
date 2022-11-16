@@ -52,7 +52,12 @@ kubectl get svc -n NAMESPACE
 ### Visualizar Pagina Web
 En una pestana del navegador de Internet
 ```
-http://DIRECCION_DE_IP_DEL_SERVICIO
+http://DIRECCION_DE_IP_DEL_SERVICIO:60000
+```
+
+### Observar los logs de los Pods
+```
+kubectl logs -n NAMESPACE NOMBRE_DEL_POD
 ```
 
 ### Destruir Cluster
